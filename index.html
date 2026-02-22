@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ORBIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css for fadeIn effect -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./stylesheet/header.css" />
+    <script src="./js/index.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" alt="Logo" style="height: 50px" />
+        </a>
+
+        <!-- Toggler for mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar content -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <!-- Center: Menus -->
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item me-lg-4">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+
+            <!-- Destinations Dropdown -->
+            <li class="nav-item dropdown me-lg-4">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="destinationsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Destinations
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="destinationsDropdown">
+                <li><a class="dropdown-item" href="#">Nepal</a></li>
+                <li><a class="dropdown-item" href="#">India</a></li>
+                <li><a class="dropdown-item" href="#">Thailand</a></li>
+              </ul>
+            </li>
+
+            <!-- Travel Guides Dropdown -->
+            <li class="nav-item dropdown me-lg-4">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="guidesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Travel Guides
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="guidesDropdown">
+                <li><a class="dropdown-item" href="#">Travel Checklist</a></li>
+                <li><a class="dropdown-item" href="#">Best Travel Times</a></li>
+                <li><a class="dropdown-item" href="#">Budgeting Tips</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Destination Guides</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Travel Insurance</a></li>
+                <li><a class="dropdown-item" href="#">Local Etiquette</a></li>
+              </ul>
+            </li>
+
+            <!-- Company Dropdown -->
+            <li class="nav-item dropdown me-lg-4">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="companyDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Company
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="companyDropdown">
+                <li><a class="dropdown-item" href="#">Our Story</a></li>
+                <li><a class="dropdown-item" href="#">Our Team</a></li>
+                <li><a class="dropdown-item" href="#">Why Choose Us</a></li>
+                <li><a class="dropdown-item" href="#">Careers</a></li>
+                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                <li><a class="dropdown-item" href="#">Contact Support</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item me-lg-4">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item me-lg-4">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Icons -->
+        <div class="d-flex align-items-center ms-auto gap-3">
+          <i class="bi bi-search fs-5" title="Search"></i>
+          <i class="bi bi-heart fs-5" title="Wishlist"></i>
+          <img src="./images/user.png" alt="User" style="height: 30px" />
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img
+            src="/images/travel2.jpg"
+            class="d-block w-100 img-fluid"
+            alt="slider-image"
+          />
+          <div class="carousel-caption text-center">
+            <h2 class="display-6 fw-bold">Your Dream Vacation Awaits</h2>
+            <p class="lead">Explore breathtaking destinations with us!</p>
+            <button class="btn btn-primary">Discover More</button>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img
+            src="/images/slider1.jpg"
+            class="d-block w-100 img-fluid"
+            alt="slider-image"
+          />
+          <div class="carousel-caption text-center">
+            <h2 class="display-6 fw-bold">Endless Adventures</h2>
+            <p class="lead">Get ready for unforgettable journeys!</p>
+            <button class="btn btn-primary">Explore Now</button>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img
+            src="/images/slider2.jpg"
+            class="d-block w-100 img-fluid"
+            alt="slider-image"
+          />
+          <div class="carousel-caption custom-caption text-center d-block">
+            <h2 class="display-6 fw-bold">Take a Break, Take a Trip</h2>
+            <p class="lead">Relax and rejuvenate in paradise.</p>
+            <button class="btn btn-primary">Plan Your Trip</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- About-us section -->
+
+    <!-- About-us section -->
+    <section class="about-section py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Content -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h3 class="text-success fw-bold mb-3">Take A Tour</h3>
+            <h2 class="fw-bold mb-4">Discover Our Travel Guideline</h2>
+            <p class="mb-4 text-muted">
+              An enim nullam tempor gravida donec enim congue magna at pretium
+              purus pretium ligula rutrum luctus risus diam eget risus varius
+              blandit sit amet non magna.
+            </p>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-success me-2"></i
+                >Handpicked Travel Packages
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>24/7
+                Customer Support
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-success me-2"></i
+                >Experienced Tour Guides
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill text-success me-2"></i>Best
+                Price Guarantee
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Images -->
+          <div class="col-lg-6">
+            <div class="image-wrapper position-relative">
+              <img
+                src="./images/gallery1.jpg"
+                alt="London"
+                class="img-fluid w-100 mb-3 shadow main-image"
+              />
+              <img
+                src="./images/travel2.jpg"
+                alt="Travel"
+                class="img-fluid shadow overlay-image position-absolute d-none d-md-block"
+                style="width: 60%; bottom: -20px; right: -20px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Package SECTION -->
+    <section class="package-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Top Travel Packages</h2>
+        <div class="row">
+          <!-- Package Card Start -->
+          <div class="col-md-4 mb-5">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="position-relative">
+                <img
+                  src="/images/everest.jpg"
+                  class="card-img-top"
+                  alt="Mountain Adventure"
+                  style="height: 230px; object-fit: cover"
+                />
+                <span
+                  class="badge bg-white text-success position-absolute top-0 start-0 m-2 border border-success px-3 py-1 fw-semibold"
+                >
+                  <i class="bi bi-clock-history me-1"></i> 3 DAYS
+                </span>
+              </div>
+              <div class="card-body">
+                <h5 class="fw-semibold mb-1">
+                  Venice, Rome and Milan – 9 Days 8 Nights
+                </h5>
+                <p class="text-muted mb-2">
+                  <i class="bi bi-geo-alt-fill text-success"></i> Bryce Canyon
+                  National Park, USA
+                </p>
+                <div class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fw-bold fs-5 text-dark">$139.99</span>
+                    <del class="text-muted ms-1">$190.00</del>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-danger px-4"
+                    style="background-color: #63ab45; border: #63ab45"
+                    >Explore</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package Card End -->
+
+          <!-- Package Card Start -->
+          <div class="col-md-4 mb-5">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="position-relative">
+                <img
+                  src="/images/everest.jpg"
+                  class="card-img-top"
+                  alt="Mountain Adventure"
+                  style="height: 230px; object-fit: cover"
+                />
+                <span
+                  class="badge bg-white text-success position-absolute top-0 start-0 m-2 border border-success px-3 py-1 fw-semibold"
+                >
+                  <i class="bi bi-clock-history me-1"></i> 3 DAYS
+                </span>
+              </div>
+              <div class="card-body">
+                <h5 class="fw-semibold mb-1">
+                  Venice, Rome and Milan – 9 Days 8 Nights
+                </h5>
+                <p class="text-muted mb-2">
+                  <i class="bi bi-geo-alt-fill text-success"></i> Bryce Canyon
+                  National Park, USA
+                </p>
+                <div class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fw-bold fs-5 text-dark">$139.99</span>
+                    <del class="text-muted ms-1">$190.00</del>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-danger px-4"
+                    style="background-color: #63ab45; border: #63ab45"
+                    >Explore</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Package Card End -->
+
+          <!-- Package Card Start -->
+          <div class="col-md-4 mb-5">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="position-relative">
+                <img
+                  src="/images/everest.jpg"
+                  class="card-img-top"
+                  alt="Mountain Adventure"
+                  style="height: 230px; object-fit: cover"
+                />
+                <span
+                  class="badge bg-white text-success position-absolute top-0 start-0 m-2 border border-success px-3 py-1 fw-semibold"
+                >
+                  <i class="bi bi-clock-history me-1"></i> 3 DAYS
+                </span>
+              </div>
+              <div class="card-body">
+                <h5 class="fw-semibold mb-1">
+                  Venice, Rome and Milan – 9 Days 8 Nights
+                </h5>
+                <p class="text-muted mb-2">
+                  <i class="bi bi-geo-alt-fill text-success"></i> Bryce Canyon
+                  National Park, USA
+                </p>
+                <div class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fw-bold fs-5 text-dark">$139.99</span>
+                    <del class="text-muted ms-1">$190.00</del>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-danger px-4"
+                    style="background-color: #63ab45; border: #63ab45"
+                    >Explore</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Package Card End -->
+
+          <!-- Package Card Start -->
+          <div class="col-md-4 mb-5">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="position-relative">
+                <img
+                  src="/images/everest.jpg"
+                  class="card-img-top"
+                  alt="Mountain Adventure"
+                  style="height: 230px; object-fit: cover"
+                />
+                <span
+                  class="badge bg-white text-success position-absolute top-0 start-0 m-2 border border-success px-3 py-1 fw-semibold"
+                >
+                  <i class="bi bi-clock-history me-1"></i> 3 DAYS
+                </span>
+              </div>
+              <div class="card-body">
+                <h5 class="fw-semibold mb-1">
+                  Venice, Rome and Milan – 9 Days 8 Nights
+                </h5>
+                <p class="text-muted mb-2">
+                  <i class="bi bi-geo-alt-fill text-success"></i> Bryce Canyon
+                  National Park, USA
+                </p>
+                <div class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fw-bold fs-5 text-dark">$139.99</span>
+                    <del class="text-muted ms-1">$190.00</del>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-danger px-4"
+                    style="background-color: #63ab45; border: #63ab45"
+                    >Explore</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Package Card End -->
+
+          <!-- Package Card Start -->
+          <div class="col-md-4 mb-5">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="position-relative">
+                <img
+                  src="/images/everest.jpg"
+                  class="card-img-top"
+                  alt="Mountain Adventure"
+                  style="height: 230px; object-fit: cover"
+                />
+                <span
+                  class="badge bg-white text-success position-absolute top-0 start-0 m-2 border border-success px-3 py-1 fw-semibold"
+                >
+                  <i class="bi bi-clock-history me-1"></i> 3 DAYS
+                </span>
+              </div>
+              <div class="card-body">
+                <h5 class="fw-semibold mb-1">
+                  Venice, Rome and Milan – 9 Days 8 Nights
+                </h5>
+                <p class="text-muted mb-2">
+                  <i class="bi bi-geo-alt-fill text-success"></i> Bryce Canyon
+                  National Park, USA
+                </p>
+                <div class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fw-bold fs-5 text-dark">$139.99</span>
+                    <del class="text-muted ms-1">$190.00</del>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-danger px-4"
+                    style="background-color: #63ab45; border: #63ab45"
+                    >Explore</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Package Card End -->
+
+          <!-- Package Card Start -->
+          <div class="col-md-4 mb-5">
+            <div class="card shadow-sm border-0 h-100">
+              <div class="position-relative">
+                <img
+                  src="/images/everest.jpg"
+                  class="card-img-top"
+                  alt="Mountain Adventure"
+                  style="height: 230px; object-fit: cover"
+                />
+                <span
+                  class="badge bg-white text-success position-absolute top-0 start-0 m-2 border border-success px-3 py-1 fw-semibold"
+                >
+                  <i class="bi bi-clock-history me-1"></i> 3 DAYS
+                </span>
+              </div>
+              <div class="card-body">
+                <h5 class="fw-semibold mb-1">
+                  Venice, Rome and Milan – 9 Days 8 Nights
+                </h5>
+                <p class="text-muted mb-2">
+                  <i class="bi bi-geo-alt-fill text-success"></i> Bryce Canyon
+                  National Park, USA
+                </p>
+                <div class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fw-bold fs-5 text-dark">$139.99</span>
+                    <del class="text-muted ms-1">$190.00</del>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-danger px-4"
+                    style="background-color: #63ab45; border: #63ab45"
+                    >Explore</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Package Card End -->
+          <!-- Duplicate above block for more cards -->
+        </div>
+        <!-- buttton -->
+        <a href="#" class="btn-package">Explore Package</a>
+      </div>
+    </section>
+
+    <!-- explore section -->
+
+    <section class="explore-section">
+      <div class="container">
+        <div class="text-center mb-5 text-white">
+          <h2
+            class="fw-bold"
+            style="color: black; font-size: 40px"
+            id="explore-title"
+          >
+            Explore Our Top Destinations
+          </h2>
+          <p style="color: black; font-size: larger; margin-top: 20px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+            placeat quia iusto doloribus alias, assumenda officiis molestiae,
+            nostrum voluptas nulla laudantium vel. Ducimus, iure nam veniam
+            laborum architecto sit quaerat?
+          </p>
+        </div>
+        <div class="row g-4" style="margin-bottom: 20px">
+          <!-- Large Left Card -->
+          <div class="col-md-6" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="explore-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+                alt="Europe"
+              />
+              <div class="explore-overlay">
+                <h4 class="mb-1 fw-bold">Europe</h4>
+                <div class="tour-badge">07 Tours</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side Cards -->
+          <div class="col-md-6">
+            <div class="row g-4">
+              <!-- Top Right -->
+              <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+                <div class="explore-card">
+                  <img
+                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+                    alt="Africa Wild"
+                  />
+                  <div class="explore-overlay">
+                    <h5 class="mb-1 fw-bold">Africa wild</h5>
+                    <div class="tour-badge">142 Tours</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Bottom Right -->
+              <div
+                class="col-6"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
+                <div class="explore-card">
+                  <img src="/images/travel2.jpg" alt="Scandinavia" />
+                  <div class="explore-overlay">
+                    <h6 class="mb-1 fw-bold">Scandinavia</h6>
+                    <div class="tour-badge">15 Tours</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-6"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                data-aos-duration="1000"
+              >
+                <div class="explore-card">
+                  <img
+                    src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"
+                    alt="America"
+                  />
+                  <div class="explore-overlay">
+                    <h6 class="mb-1 fw-bold">America</h6>
+                    <div class="tour-badge">05 Tours</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- why choose-us section -->
+    <section class="about-us-section py-5">
+      <div class="container">
+        <div class="main-intro">
+          <!-- Left Column: Text -->
+          <div class="intro-section">
+            <h2 style="font-family: Latin; margin-top: 20px; color: white">
+              Journey with Assurance
+            </h2>
+            <h2 style="font-size: 50px; margin-top: 30px; color: white">
+              Why Choose Us for Your Next Adventure?
+            </h2>
+            <p
+              style="
+                font-size: larger;
+                margin-top: 30px;
+                color: white;
+                font-family: Latin;
+              "
+            >
+              Experience personalized travel like never before — from hidden
+              treasures to iconic landmarks, we craft journeys that inspire and
+              delight.
+            </p>
+            <!-- <p class="text-primary fw-semibold mb-4" style="font-size: 1.1rem">
+              Backed by <span class="fw-bold">25 Years</span> of expertise, we
+              transform your travel dreams into lasting memories.
+            </p> -->
+            <a
+              href="#destinations"
+              class="btn btn-primary mt-3"
+              style="margin-top: 20px"
+            >
+              Discover Our Destinations
+            </a>
+          </div>
+
+          <!-- Right Column: Animated Oval Images -->
+          <div class="image-section">
+            <img
+              src="/images/travel3.jpg"
+              alt="Nature"
+              class="oval-img animate__animated animate__zoomIn"
+            />
+            <img
+              src="/images/travel2.jpg"
+              alt="Trekking"
+              class="oval-img animate__animated animate__fadeInRight"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog section -->
+    <section class="blog-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Latest Blog Posts</h2>
+
+        <div class="row g-4">
+          <!-- Blog Card 1 -->
+          <div class="col-md-4">
+            <div class="blog-card shadow-sm">
+              <div class="blog-image">
+                <img src="/images/newyork.jpg" alt="Blog Post" />
+              </div>
+              <div class="blog-date">July 30, 2025</div>
+              <div class="blog-content">
+                <h5 class="blog-title">Top 10 Hidden Gems in Nepal</h5>
+                <p class="blog-excerpt">
+                  Discover the unexplored beauty of Nepal — from secluded
+                  valleys to peaceful villages.
+                </p>
+                <div class="author">By TravelExpert</div>
+                <a href="#" class="read-more">Read More →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Card 2 -->
+          <div class="col-md-4">
+            <div class="blog-card shadow-sm">
+              <div class="blog-image">
+                <img src="/images/london.jpg" alt="Blog Post" />
+              </div>
+              <div class="blog-date">July 30, 2025</div>
+              <div class="blog-content">
+                <h5 class="blog-title">Exploring Culture in Kathmandu</h5>
+                <p class="blog-excerpt">
+                  Dive into the traditions, temples, and tastes of Nepal’s
+                  vibrant capital city.
+                </p>
+                <div class="author">By TravelExpert</div>
+                <a href="#" class="read-more">Read More →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Card 3 -->
+          <div class="col-md-4">
+            <div class="blog-card shadow-sm">
+              <div class="blog-image">
+                <img src="/images/bali.jpg" alt="Blog Post" />
+              </div>
+              <div class="blog-date">July 30, 2025</div>
+              <div class="blog-content">
+                <h5 class="blog-title">Trekking Trails for Beginners</h5>
+                <p class="blog-excerpt">
+                  Start your adventure on the right foot with these
+                  beginner-friendly trekking routes.
+                </p>
+                <div class="author">By TravelExpert</div>
+                <a href="#" class="read-more">Read More →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section
+      class="photo-gallery py-5"
+      style="margin-bottom: 30px; margin-top: 30px"
+    >
+      <div class="container text-center">
+        <h2 class="mb-5">Captured Journeys</h2>
+
+        <div class="row justify-content-center custom-gallery">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <img
+              src="./images/gallery1.jpg"
+              class="img-fluid shadow rounded mb-3"
+              alt="gallery-image"
+            />
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+              class="img-fluid shadow rounded"
+              alt="gallery-image"
+            />
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+              class="img-fluid shadow rounded mb-3"
+              alt="Mountains in the Clouds"
+            />
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+              class="img-fluid shadow rounded"
+              alt="Boat on Calm Water"
+            />
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+              class="img-fluid shadow rounded mb-3"
+              alt="Waves at Sea"
+            />
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+              class="img-fluid shadow rounded"
+              alt="Yosemite National Park"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <!-- testimonial section -->
+
+    <section style="color: #000; background-color: #f3f2f2; margin-top: 30px">
+      <div class="container py-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 col-xl-8 text-center">
+            <h2 class="mb-4">Traveler Reviews</h2>
+            <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+              error amet numquam iure provident voluptate esse quasi, veritatis
+              totam voluptas nostrum quisquam eum porro a pariatur veniam.
+            </p>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card">
+              <div class="card-body py-4 mt-2">
+                <div class="d-flex justify-content-center mb-4">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                    class="rounded-circle shadow-1-strong"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <h5 class="font-weight-bold">Teresa May</h5>
+                <h6 class="font-weight-bold my-3">Founder at ET Company</h6>
+                <ul class="list-unstyled d-flex justify-content-center">
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star-half-alt fa-sm text-info"></i>
+                  </li>
+                </ul>
+                <p class="mb-2">
+                  <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit
+                  amet, consectetur adipisicing elit. Quod eos id officiis hic
+                  tenetur quae quaerat ad velit ab hic tenetur.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card">
+              <div class="card-body py-4 mt-2">
+                <div class="d-flex justify-content-center mb-4">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(15).webp"
+                    class="rounded-circle shadow-1-strong"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <h5 class="font-weight-bold">Maggie McLoan</h5>
+                <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+                <ul class="list-unstyled d-flex justify-content-center">
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                </ul>
+                <p class="mb-2">
+                  <i class="fas fa-quote-left pe-2"></i>Autem, totam debitis
+                  suscipit saepe sapiente magnam officiis quaerat necessitatibus
+                  odio assumenda perferendis labore laboriosam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-0">
+            <div class="card">
+              <div class="card-body py-4 mt-2">
+                <div class="d-flex justify-content-center mb-4">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
+                    class="rounded-circle shadow-1-strong"
+                    width="100"
+                    height="100"
+                  />
+                </div>
+                <h5 class="font-weight-bold">Alexa Horwitz</h5>
+                <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+                <ul class="list-unstyled d-flex justify-content-center">
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="far fa-star fa-sm text-info"></i>
+                  </li>
+                </ul>
+                <p class="mb-2">
+                  <i class="fas fa-quote-left pe-2"></i>Cras sit amet nibh
+                  libero, in gravida nulla metus scelerisque ante sollicitudin
+                  commodo cras purus odio, vestibulum in tempus viverra turpis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact-banner -->
+    <!-- Contact Us Banner Section -->
+    <section class="contact-banner">
+      <div class="container">
+        <h2>Get in Touch with Us</h2>
+        <p>
+          Your next adventure is just a message away. We're here to help you
+          plan your perfect trip!
+        </p>
+        <a href="#contact-form" class="btn-contact">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #55a8d4; width: 100%"
+    >
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                Wanderlust Travels
+              </h6>
+              <p>
+                Your trusted partner in unforgettable journeys. Explore exotic
+                destinations, cultural wonders, and adventure trips around the
+                world with us.
+              </p>
+            </div>
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Packages</h6>
+              <p><a class="text-white" href="#">Trekking Tours</a></p>
+              <p><a class="text-white" href="#">Adventure Trips</a></p>
+              <p><a class="text-white" href="#">Cultural Tours</a></p>
+              <p><a class="text-white" href="#">Beach Holidays</a></p>
+            </div>
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Useful Links</h6>
+              <p><a class="text-white" href="#">My Bookings</a></p>
+              <p><a class="text-white" href="#">Travel Guide</a></p>
+              <p><a class="text-white" href="#">FAQs</a></p>
+              <p><a class="text-white" href="#">Contact Support</a></p>
+            </div>
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p><i class="fas fa-home mr-3"></i> Thamel, Kathmandu, Nepal</p>
+              <p><i class="fas fa-envelope mr-3"></i> info@wanderlust.com</p>
+              <p><i class="fas fa-phone mr-3"></i> +977 1 1234567</p>
+              <p><i class="fas fa-print mr-3"></i> +977 1 7654321</p>
+            </div>
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="my-3" />
+
+        <!-- Section: Copyright -->
+        <section class="p-3 pt-0">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <div class="p-3">
+                © 2025 Wanderlust Travels |
+                <a class="text-white" href="#">Privacy Policy</a>
+              </div>
+            </div>
+
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <!-- Facebook -->
+              <a class="btn btn-outline-light btn-floating m-1" role="button">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <!-- Twitter -->
+              <a class="btn btn-outline-light btn-floating m-1" role="button">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <!-- YouTube -->
+              <a class="btn btn-outline-light btn-floating m-1" role="button">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <!-- Instagram -->
+              <a class="btn btn-outline-light btn-floating m-1" role="button">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,689 @@
+/* header style */
+/* General Navbar Styles */
+.navbar {
+  background-color: #f8f9fa; /* Light background */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar .navbar-brand img {
+  max-height: 50px; /* Ensure logo is appropriately sized */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px; /* Space out the menu items */
+}
+
+/* Dropdown Styles */
+.nav-item.dropdown {
+  position: relative; /* Needed for positioning the dropdown */
+}
+
+.nav-item .dropdown-menu {
+  display: none; /* Hide the dropdown by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Adjust width to match your design */
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block; /* Show dropdown on hover */
+}
+
+.nav-item .dropdown-item {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item .dropdown-item:hover {
+  background-color: #f0f0f0; /* Highlight background on hover */
+}
+
+/* Toggler Button (Hamburger) */
+/* Remove background, border, and focus effects */
+.navbar-toggler {
+  border: none !important;
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Black icon bars */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Optional: remove blue border on focus for accessibility tweak */
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Dropdown for Mobile */
+@media (max-width: 991px) {
+  .navbar-nav .nav-item {
+    margin-right: 0;
+    text-align: center; /* Center align items for mobile */
+  }
+
+  /* Adjust dropdown to display as full-width on mobile */
+  .nav-item .dropdown-menu {
+    position: static;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .nav-item .dropdown-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav-item .dropdown-item:last-child {
+    border-bottom: none; /* Remove bottom border for the last item */
+  }
+}
+/* Adjust spacing and alignment */
+.navbar .nav-icons i {
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+/* Ensure logo fits */
+.navbar-brand img {
+  max-height: 50px;
+}
+
+/* Dropdown full width on mobile */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .nav-icons {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+/* Right Icons Section */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space out icons */
+}
+
+.nav-icons i {
+  font-size: 1.2rem; /* Icon size */
+  color: #333; /* Default icon color */
+  cursor: pointer;
+}
+
+.nav-icons img {
+  width: 30px; /* User icon size */
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.nav-icons i:hover,
+.nav-icons img:hover {
+  color: #007bff; /* Highlight on hover */
+}
+
+/* Active and Hover States for Links */
+.nav-link {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #007bff; /* Change link color on hover and active state */
+}
+
+/* Style the dropdown toggles */
+.navbar .nav-item .dropdown-toggle::after {
+  content: ""; /* Remove default dropdown arrow */
+}
+
+/* |hero section style  */
+
+.carousel-inner {
+  position: relative;
+  min-height: 70vh; /* Responsive height */
+  height: auto;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin-left: 35%;
+  text-align: center;
+}
+
+.carousel-caption h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-caption button {
+  padding: 0.85rem 1.8rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.carousel-item img {
+  max-height: 115vh;
+  opacity: 0.799;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(49, 66, 53, 0.626);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 10;
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .carousel-inner {
+    min-height: 50vh;
+  }
+
+  .carousel-caption h2 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption button {
+    font-size: 1.1rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .carousel-item img {
+    max-height: 90vh;
+  }
+}
+
+/* Mobile phones (576px and below) */
+@media (max-width: 576px) {
+  .carousel-inner {
+    min-height: 40vh;
+  }
+
+  .carousel-caption {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .carousel-caption button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .carousel-item img {
+    max-height: 80vh;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+/* about-us style */
+.about-section {
+  padding: 40px 0;
+  margin: 30px;
+}
+
+.image-wrapper {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 450px;
+  height: 500px; /* Increased height */
+  object-fit: cover;
+  border-radius: 12px;
+  border: 8px solid #fff;
+  transition: transform 0.3s ease;
+}
+
+.overlay-image {
+  position: absolute;
+  width: 300px; /* Increased width */
+  height: 250px; /* Increased height */
+  object-fit: cover;
+  border-radius: 12px;
+  border: 8px solid #fff;
+  bottom: -30px;
+  left: -40px;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.main-image:hover,
+.overlay-image:hover {
+  transform: scale(1.05);
+}
+
+/* Custom image overlap styles */
+.image-wrapper {
+  position: relative;
+}
+
+.overlay-image {
+  border-radius: 10px;
+  z-index: 1;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767.98px) {
+  .overlay-image {
+    position: static !important;
+    width: 100% !important;
+    margin-top: 0.1rem;
+  }
+}
+
+/* explore style */
+
+.explore-section {
+  background-color: #f2f4f5;
+  padding: 60px 0;
+  margin: 40px;
+  border-radius: 20px;
+}
+
+.explore-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.explore-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.explore-card:hover img {
+  transform: scale(1.1);
+}
+
+.explore-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: #fff;
+}
+
+.tour-badge {
+  background-color: #ff4d58;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* Mobile responsive tweaks */
+@media (max-width: 767.98px) {
+  .explore-overlay {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+  .tour-badge {
+    font-size: 0.75rem;
+    padding: 2px 10px;
+  }
+}
+/* package style */
+.package-section {
+  margin-top: 20px;
+}
+.container h2 {
+  font-size: 40px;
+  font-family: "Playwrite AU QLD", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bolder;
+}
+.package-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+}
+
+.img-container {
+  overflow: hidden;
+  max-height: 220px;
+}
+
+.package-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.package-img:hover {
+  transform: scale(1.05);
+}
+
+.card-location {
+  font-size: 0.95rem;
+}
+
+.rating i {
+  font-size: 1rem;
+}
+
+.btn-package {
+  display: inline-block;
+  margin-left: 42%;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #0b5ed7;
+  margin-top: 20px;
+  text-decoration: none;
+  border: 2px solid #0b5ed7;
+  border-radius: 10px;
+}
+.btn-package:hover {
+  color: white;
+  border: 2px solid #63ab45;
+  background-color: #63ab45;
+}
+
+/* why choose-us section */
+
+.about-us-section {
+  height: 750px;
+  background-color: #55a8d4;
+  display: flex;
+  align-items: center;
+}
+
+.text-primary {
+  color: white !important; /* wrong value or override */
+}
+.main-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+/* Left: Text Section */
+.intro-section {
+  width: 50%;
+  padding: 20px;
+}
+
+/* Right: Image Section */
+.image-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Make image oval */
+.oval-img {
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Animate on load (already using animate.css classes) */
+.animate__animated {
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+}
+
+/* Optional Hover */
+.oval-img:hover {
+  transform: scale(1.05);
+}
+
+/* Button Styling */
+.intro-section .btn {
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+@media (max-width: 767.98px) {
+  .oval-img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .about-us-section h2 {
+    font-size: 1.75rem !important;
+  }
+
+  .about-us-section p {
+    font-size: 1rem !important;
+  }
+}
+
+/* blog style */
+
+.blog-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 500px; /* Increased height */
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Date styling below image */
+.blog-date {
+  font-size: 0.85rem;
+  color: #666;
+  padding: 12px 20px 0;
+  font-weight: 500;
+}
+
+.blog-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.blog-excerpt {
+  font-size: 0.95rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+.author {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  color: #007bff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: auto;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* contact-banner style */
+.contact-banner {
+  background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80")
+    no-repeat center center/cover;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin: 80px;
+  border-radius: 30px;
+}
+
+.contact-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(48, 47, 47, 0.5); /* dark overlay */
+  z-index: 1;
+  border-radius: 30px;
+}
+
+.contact-banner .container {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-banner h2 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.contact-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-contact {
+  display: inline-block;
+  background-color: #007bff; /* a nice travel-themed accent color */
+  color: white;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: #55a8d4;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .contact-banner h2 {
+    font-size: 2rem;
+  }
+  .contact-banner p {
+    font-size: 1rem;
+  }
+}
+/* Simple bounce animation */
+@keyframes bounce {
+  0% {
+    transform: scale(1.05) translateY(0);
+  }
+  50% {
+    transform: scale(1.08) translateY(-8px);
+  }
+  100% {
+    transform: scale(1.05) translateY(0);
+  }
+}
